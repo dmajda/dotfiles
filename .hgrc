@@ -1,0 +1,42 @@
+[ui]
+username = David Majda <david@majda.cz>
+
+[extensions]
+color   =
+pager   =
+convert =
+mq      =
+
+[defaults]
+commit = -v
+
+[diff]
+git = 1
+
+[color]
+status.modified         = cyan
+status.added            = green
+status.removed          = red
+status.deleted          = magenta
+status.unknown          = magenta
+status.ignored          = black bold
+status.clean            = none
+status.copied           = none
+
+diff.diffline           = bold
+diff.extended           = bold
+diff.file_a             = bold
+diff.file_b             = bold
+diff.hunk               = cyan
+diff.deleted            = red
+diff.inserted           = green
+diff.changed            = white
+diff.trailingwhitespace = bold red_background
+
+qseries.applied         = green
+qseries.unapplied       = black bold
+qseries.missing         = magenta
+
+[pager]
+pager  = LESS='FSRX' less
+attend = diff, log, qdiff
