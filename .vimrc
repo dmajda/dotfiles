@@ -56,3 +56,6 @@ set grepformat=%f:%l:%m " Set correct output format
 " NERD tree
 let NERDTreeWinSize = 35
 nmap <leader>t :NERDTreeToggle<CR>
+
+" fuzzyfinder.vim
+nmap <leader>f :FuzzyFinderFile \*\*/<CR>
