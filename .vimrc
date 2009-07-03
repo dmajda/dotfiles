@@ -51,3 +51,8 @@ set incsearch " Display search results incrementally
 set grepprg=ack-grep    " Use 'ack-grep' for grepping
 set grepformat=%f:%l:%m " Set correct output format
 
+" ===== Plugins =====
+
+" NERD tree
+let NERDTreeWinSize = 35
+nmap <leader>t :NERDTreeToggle<CR>
