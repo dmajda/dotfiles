@@ -51,6 +51,12 @@ set incsearch " Display search results incrementally
 set grepprg=ack-grep    " Use 'ack-grep' for grepping
 set grepformat=%f:%l:%m " Set correct output format
 
+" Commands to find the word under the cursor in all files in the current
+" directory and its subdirectories - non-exactly and exactly. Keybindings are
+" taken from EasyGrep.
+nmap <leader>vv :exec "grep '" . expand("<cword>") . "'"<CR>
+nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
+
 " ===== Plugins =====
 
 " NERD tree
