@@ -1,6 +1,10 @@
 [ui]
 username = David Majda <david@majda.cz>
 
+[web]
+allow_push = *
+push_ssl = false
+
 [extensions]
 color   =
 pager   =
