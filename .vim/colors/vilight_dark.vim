@@ -1,6 +1,7 @@
-" rob.robb.ns
+" ViLight Dark Vim color scheme by David Majda (david@majda.cz)
 "
-" Modified by David Majda (david@majda.cz).
+" Based on "vilight.vim" by Rob Robbins
+" (http://www.vim.org/scripts/script.php?script_id=2776).
 
 set background=dark
 hi clear
@@ -8,7 +9,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="twilight"
+let g:colors_name="ViLight Dark"
 
 hi Normal         guifg=#F8F8F8           guibg=#000000
 hi Cursor         guifg=#141414           guibg=#f8f8f8
