@@ -48,8 +48,8 @@ set incsearch " Display search results incrementally
 
 " ===== Grepping =====
 
-set grepprg=ack-grep    " Use 'ack-grep' for grepping
-set grepformat=%f:%l:%m " Set correct output format
+set grepprg=ack-grep\ --all " Use 'ack-grep' for grepping
+set grepformat=%f:%l:%m     " Set correct output format
 
 " Commands to find the word under the cursor in all files in the current
 " directory and its subdirectories - non-exactly and exactly. Keybindings are
