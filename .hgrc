@@ -9,6 +9,7 @@ push_ssl = false
 color   =
 pager   =
 convert =
+fetch   =
 mq      =
 
 [defaults]
