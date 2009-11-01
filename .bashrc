@@ -100,6 +100,9 @@ fi
 
 ##### My own functions/aliases #####
 
+# Workaround for https://bugs.launchpad.net/vim/+bug/402188
+alias gvim='gvim 2>/dev/null'
+
 # Recoding files from and to Windows 1250
 
 w2u() {
