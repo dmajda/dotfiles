@@ -23,7 +23,7 @@ hi IncSearch      guifg=#4f94cd           guibg=#f8f8f8
 hi LineNr         guifg=#a6a6a6           guibg=#141414
 hi ModeMsg        guifg=#f9ee98           guibg=#141414
 hi MoreMsg        guifg=#f9ee98           guibg=#141414
-hi NonText        guifg=#665f57           guibg=#000000
+hi NonText        guifg=#000000           guibg=#000000
 hi Search         guifg=#f8f8f8           guibg=#4f94cd
 hi StatusLine     guifg=#0E2231           guibg=#8693A5
 hi StatusLineNC   guifg=#0e2231           guibg=#8693a5
