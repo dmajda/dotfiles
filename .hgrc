@@ -43,5 +43,5 @@ qseries.unapplied       = black bold
 qseries.missing         = magenta
 
 [pager]
-pager  = LESS='FSRX' less
+pager  = LESS='FRX' less
 attend = diff, log, qdiff
