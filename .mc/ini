@@ -89,11 +89,6 @@ filetype_mode=1
 other_dir=/home/dmajda
 current_is_left=0
 
-[Panelize]
-Najít odmítnuté části záplat (*.rej)=find . -name \*.rej -print
-Najít programy SUID a SGID.=find . \( \( -perm -04000 -a -perm +011 \) -o \( -perm -02000 -a -perm +01 \) \) -print
-Najít všechny soubory *.orig=find . -name \*.orig -print
-
 [New Left Panel]
 display=listing
 reverse=1
@@ -107,6 +102,7 @@ user_status2=half type name | size | perm
 user_status3=half type name | size | perm
 user_mini_status=0
 panel_display_codepage=Other_8_bit
+exec_first=0
 
 [New Right Panel]
 display=listing
@@ -121,9 +117,15 @@ user_status2=half type name | size | perm
 user_status3=half type name | size | perm
 user_mini_status=0
 panel_display_codepage=Other_8_bit
+exec_first=0
 
 [Misc]
 ftpfs_password=anonymous@
 ftp_proxy_host=gate
 display_codepage=Other_8_bit
 ftp_codepage=Other_8_bit
+
+[Panelize]
+Najít odmítnuté části záplat (*.rej)=find . -name \*.rej -print
+Najít programy SUID a SGID.=find . \( \( -perm -04000 -a -perm +011 \) -o \( -perm -02000 -a -perm +01 \) \) -print
+Najít všechny soubory *.orig=find . -name \*.orig -print
