@@ -1,0 +1,7 @@
+# ===== Additional File Types =====
+
+# For Ruby on Rails
+--type-set=erb=.erb
+
+# For Nette
+--type-set=phtml=.phtml
