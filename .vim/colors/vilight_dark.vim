@@ -32,7 +32,7 @@ hi WildMenu       guifg=#9b70f3           guibg=#0e2231
 hi MatchParen     guifg=#f8f8f8           guibg=#4f94cd
 hi ErrorMsg       guifg=#cf6a4c           guibg=NONE
 hi WarningMsg     guifg=#cf6a4c           guibg=NONE
-hi Title          guifg=#cf6a4c           guibg=#141414
+hi Title          guifg=#cf6a4c           guibg=#000000
 
 "Syntax hilight groups
 
