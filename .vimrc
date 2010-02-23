@@ -41,6 +41,13 @@ set shiftwidth=2 " Number of spaces to use for each step of (auto)indent
 " Select just pasted text
 nmap gp `[v`]
 
+" <S-Up> & <S-Down> scroll by default, which causes many scrolls by accident. I
+" don't need these keys so I just disable them.
+map  <S-Up>   <Nop>
+map  <S-Down> <Nop>
+imap <S-Up>   <Nop>
+imap <S-Down> <Nop>
+
 " ===== Search =====
 
 set hlsearch  " Highlight all matches for the last used search pattern
