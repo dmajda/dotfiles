@@ -72,3 +72,6 @@ nmap <leader>t :NERDTreeToggle<CR>
 
 " fuzzyfinder.vim
 nmap <leader>f :FuzzyFinderFile \*\*/<CR>
+
+" vcscommand.vim
+let VCSCommandMapPrefix="<leader>x"
