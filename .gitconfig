@@ -1,7 +1,16 @@
 [user]
 	name = David Majda
 	email = david@majda.cz
+
+[core]
+	pager = less -FRX
+
 [color]
 	diff = auto
 	status = auto
 	branch = auto
+
+[alias]
+	co = checkout
+	st = status
+	ci = commit
