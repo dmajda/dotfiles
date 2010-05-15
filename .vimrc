@@ -64,6 +64,11 @@ set grepformat=%f:%l:%m " Set correct output format
 nmap <leader>vv :exec "grep '" . expand("<cword>") . "'"<CR>
 nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
 
+" ===== File Types =====
+
+" Git commit messages
+autocmd FileType gitcommit setlocal textwidth=72
+
 " ===== Plugins =====
 
 " NERD tree
