@@ -1,6 +1,7 @@
 
 [Midnight-Commander]
 show_backups=1
+kilobyte_si=0
 show_dot_files=1
 verbose=1
 mark_moves_down=1
@@ -26,6 +27,7 @@ use_8th_bit_as_meta=0
 confirm_view_dir=0
 mouse_move_pages=1
 mouse_move_pages_viewer=1
+mouse_close_dialog=0
 fast_refresh=0
 navigate_with_arrows=0
 drop_menus=0
@@ -49,11 +51,11 @@ use_netrc=1
 ftpfs_retry_seconds=30
 ftpfs_always_use_proxy=0
 ftpfs_use_passive_connections=1
+ftpfs_use_passive_connections_over_proxy=0
 ftpfs_use_unix_list_options=1
 ftpfs_first_cd_then_ls=1
 fish_directory_timeout=900
 editor_word_wrap_line_length=72
-editor_key_emulation=0
 editor_tab_spacing=8
 editor_fill_tabs_with_spaces=0
 editor_return_does_auto_indent=1
@@ -65,16 +67,28 @@ editor_option_auto_para_formatting=0
 editor_option_typewriter_wrap=0
 editor_edit_confirm_save=1
 editor_syntax_highlighting=1
+editor_persistent_selections=1
+editor_cursor_beyond_eol=0
 editor_visible_tabs=1
 editor_visible_spaces=1
+editor_line_state=0
+editor_simple_statusbar=0
+editor_check_new_line=0
 nice_rotating_dash=1
 horizontal_split=0
 mcview_remember_file_position=0
+auto_fill_mkdir_name=1
+reverse_files_only=1
+copymove_persistent_attr=1
+select_flags=6
 editor_backup_extension=~
+skin=default
+keymap=mc.keymap
+auto_save_setup_panels=1
 
 [Layout]
 equal_split=1
-first_panel_size=90
+first_panel_size=98
 message_visible=1
 keybar_visible=1
 xterm_title=1
@@ -84,48 +98,21 @@ menubar_visible=1
 show_mini_info=1
 permission_mode=0
 filetype_mode=1
-
-[Dirs]
-other_dir=/home/dmajda
-current_is_left=0
-
-[New Left Panel]
-display=listing
-reverse=1
-case_sensitive=1
-sort_order=time
-list_mode=user
-user_format=half type name | size | mtime | perm
-user_status0=half type name | size | perm
-user_status1=half type name | size | perm
-user_status2=half type name | size | perm
-user_status3=half type name | size | perm
-user_mini_status=0
-panel_display_codepage=Other_8_bit
-exec_first=0
-
-[New Right Panel]
-display=listing
-reverse=1
-case_sensitive=1
-sort_order=time
-list_mode=user
-user_format=half type name | size | mtime | perm
-user_status0=half type name | size | perm
-user_status1=half type name | size | perm
-user_status2=half type name | size | perm
-user_status3=half type name | size | perm
-user_mini_status=0
-panel_display_codepage=Other_8_bit
-exec_first=0
+free_space=1
 
 [Misc]
-ftpfs_password=anonymous@
 ftp_proxy_host=gate
-display_codepage=Other_8_bit
-ftp_codepage=Other_8_bit
+find_ignore_dirs=
+ftpfs_password=anonymous@
+display_codepage=UTF-8
+source_codepage=Other_8_bit
+
+[Colors]
+base_color=
+xterm=
+color_terminals=
 
 [Panelize]
-Najít odmítnuté části záplat (*.rej)=find . -name \*.rej -print
-Najít programy SUID a SGID.=find . \( \( -perm -04000 -a -perm +011 \) -o \( -perm -02000 -a -perm +01 \) \) -print
-Najít všechny soubory *.orig=find . -name \*.orig -print
+Najít odmítnuté části záplat (*.rej) po záplatování=find . -name \\*.rej -print
+Najít programy SUID a SGID=find . \\( \\( -perm -04000 -a -perm +011 \\) -o \\( -perm -02000 -a -perm +01 \\) \\) -print
+Najít všechny soubory *.orig po záplatování=find . -name \\*.orig -print
