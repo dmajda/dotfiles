@@ -15,4 +15,4 @@
 	st = status
 	ci = commit
 [push]
-	default = matching
+	default = tracking
