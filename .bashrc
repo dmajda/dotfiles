@@ -106,7 +106,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-##### My own functions/aliases #####
+##### My own stuff #####
+
+# Push terminal look out of stone age
+export TERM=xterm-256color
 
 # Workaround for https://bugs.launchpad.net/vim/+bug/402188
 alias gvim='gvim 2>/dev/null'
