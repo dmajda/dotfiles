@@ -16,3 +16,8 @@ ZSH_THEME="gallifrey"           # Set theme
 plugins=(command-not-found git) # Set loaded plugins
 
 source $ZSH/oh-my-zsh.sh        # Load oh-my-zsh
+
+# ===== Use rbenv =====
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
