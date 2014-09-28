@@ -8,6 +8,8 @@ export TERM=xterm-256color
 # Workaround for https://bugs.launchpad.net/vim/+bug/402188
 alias gvim='gvim 2>/dev/null'
 
+alias iosc='osc -A https://api.suse.de'
+
 # ===== Configure oh-my-zsh =====
 
 ZSH=$HOME/.oh-my-zsh            # Path to oh-my-zsh configuration
