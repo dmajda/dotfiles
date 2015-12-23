@@ -12,7 +12,7 @@ autocmd ColorScheme * highlight TrailingWhitespace ctermbg=red guibg=red
 autocmd InsertEnter * match TrailingWhitespace /some nonsense/
 autocmd InsertLeave * match TrailingWhitespace /\s\+$/
 
-colorscheme ir_black " Use nice color scheme
+colorscheme tir_black " Use nice color scheme
 
 " ===== Behavior =====
 
