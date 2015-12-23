@@ -100,8 +100,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/Align'
-Plugin 'vim-scripts/FuzzyFinder'
-Plugin 'vim-scripts/L9'             " Required by FuzzyFinder
 
 " Color schemes
 Plugin 'vim-scripts/tir_black'
@@ -115,9 +113,6 @@ filetype plugin indent on
 " NERD tree
 let NERDTreeWinSize = 35
 nmap <leader>t :NERDTreeToggle<CR>
-
-" fuzzyfinder.vim
-nmap <leader>f :FuzzyFinderFile \*\*/<CR>
 
 " tir_black
 colorscheme tir_black
