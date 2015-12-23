@@ -23,8 +23,6 @@ autocmd ColorScheme * highlight TrailingWhitespace ctermbg=red guibg=red
 autocmd InsertEnter * match TrailingWhitespace /some nonsense/
 autocmd InsertLeave * match TrailingWhitespace /\s\+$/
 
-colorscheme tir_black " Use nice color scheme
-
 " ===== Behavior =====
 
 let mapleader = "," " Map leader to more reachable key
@@ -83,7 +81,35 @@ autocmd FileType gitcommit setlocal textwidth=72
 " PEG.js grammars
 autocmd BufNewFile,BufReadPost *.pegjs set filetype=pegjs
 
-" ===== Plugins =====
+" ===== Vundle =====
+
+" Setup: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/Align'
+Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'vim-scripts/L9'             " Required by FuzzyFinder
+Plugin 'vim-scripts/vcscommand.vim'
+
+" Color schemes
+Plugin 'vim-scripts/tir_black'
+
+call vundle#end()
+
+filetype plugin indent on
+
+" ===== Plugin Config =====
 
 " NERD tree
 let NERDTreeWinSize = 35
@@ -94,3 +120,6 @@ nmap <leader>f :FuzzyFinderFile \*\*/<CR>
 
 " vcscommand.vim
 let VCSCommandMapPrefix="<leader>x"
+
+" tir_black
+colorscheme tir_black
