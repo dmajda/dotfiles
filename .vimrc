@@ -2,10 +2,17 @@ set nocompatible " Disable Vi compatibility
 
 " ===== Appearance =====
 
-set guioptions-=T        " Hide toolbars
-set guioptions-=m        " Hide menu
-set guifont=Monospace\ 8 " Use nice font
-set number               " Show line numbers
+set guioptions-=T " Hide toolbars
+set guioptions-=m " Hide menu
+set number        " Show line numbers
+
+" Use nice font
+if has("gui_macvim")
+  set guifont=Monaco:h10
+endif
+if has("gui_gtk2")
+  set guifont=Monospace\ 8
+endif
 
 " Highlight traling whitespace
 autocmd ColorScheme * highlight TrailingWhitespace ctermbg=red guibg=red
