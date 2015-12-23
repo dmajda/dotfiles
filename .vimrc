@@ -101,7 +101,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/Align'
 Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'vim-scripts/L9'             " Required by FuzzyFinder
-Plugin 'vim-scripts/vcscommand.vim'
 
 " Color schemes
 Plugin 'vim-scripts/tir_black'
@@ -118,9 +117,6 @@ nmap <leader>t :NERDTreeToggle<CR>
 
 " fuzzyfinder.vim
 nmap <leader>f :FuzzyFinderFile \*\*/<CR>
-
-" vcscommand.vim
-let VCSCommandMapPrefix="<leader>x"
 
 " tir_black
 colorscheme tir_black
