@@ -23,3 +23,8 @@ source $ZSH/oh-my-zsh.sh        # Load oh-my-zsh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# ===== Use nvm =====
+
+export NVM_DIR="/Users/dmajda/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
