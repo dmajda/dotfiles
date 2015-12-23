@@ -15,6 +15,9 @@ if has("gui_gtk2")
   set guifont=Monospace\ 8
 endif
 
+syntax on " Switch on syntax highlighting (disabled by default in vim on OS X
+          " (but not in MacVim))
+
 " Highlight traling whitespace
 autocmd ColorScheme * highlight TrailingWhitespace ctermbg=red guibg=red
 autocmd InsertEnter * match TrailingWhitespace /some nonsense/
