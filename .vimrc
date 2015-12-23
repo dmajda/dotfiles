@@ -5,6 +5,7 @@ set nocompatible " Disable Vi compatibility
 set guioptions-=T " Hide toolbars
 set guioptions-=m " Hide menu
 set number        " Show line numbers
+set ruler         " Show current position at the status line
 
 " Use nice font
 if has("gui_macvim")
