@@ -69,6 +69,9 @@ nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
 " Git commit messages
 autocmd FileType gitcommit setlocal textwidth=72
 
+" PEG.js grammars
+autocmd BufNewFile,BufReadPost *.pegjs set filetype=pegjs
+
 " ===== Plugins =====
 
 " NERD tree
