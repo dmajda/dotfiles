@@ -95,6 +95,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
@@ -113,7 +114,7 @@ filetype plugin indent on
 
 " NERD tree
 let NERDTreeWinSize = 35
-nmap <leader>t :NERDTreeToggle<CR>
+nmap <leader>t :NERDTreeTabsToggle<CR>
 
 " tir_black
 colorscheme tir_black
