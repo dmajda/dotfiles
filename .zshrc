@@ -24,5 +24,5 @@ eval "$(rbenv init -)"
 
 # ===== Use nvm =====
 
-export NVM_DIR="/Users/dmajda/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
