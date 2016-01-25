@@ -76,7 +76,7 @@ nmap <leader>vV :exec "grep '\\b" . expand("<cword>") . "\\b'"<CR>
 " ===== File Types =====
 
 " Git commit messages
-autocmd FileType gitcommit setlocal textwidth=72
+autocmd FileType gitcommit setlocal textwidth=72 noautoindent nosmartindent
 
 " PEG.js grammars
 autocmd BufNewFile,BufReadPost *.pegjs set filetype=pegjs
