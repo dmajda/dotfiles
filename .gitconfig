@@ -1,6 +1,5 @@
 [user]
-	name = David Majda
-	email = david@majda.cz
+	useConfigOnly = true
 
 [core]
 	pager = less -FRX
