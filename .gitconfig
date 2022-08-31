@@ -6,6 +6,3 @@
 	st = status
 	ci = commit
 	cp = cherry-pick
-
-[push]
-	default = tracking
