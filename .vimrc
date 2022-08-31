@@ -64,8 +64,8 @@ set incsearch " Display search results incrementally
 
 " ===== Grepping =====
 
-set grepprg=ack         " Use 'ack' for grepping
-set grepformat=%f:%l:%m " Set correct output format
+set grepprg=rg\ --vimgrep  " Use 'rg' for grepping
+set grepformat=%f:%l:%c:%m " Set correct output format
 
 " Commands to find the word under the cursor in all files in the current
 " directory and its subdirectories - non-exactly and exactly. Keybindings are
