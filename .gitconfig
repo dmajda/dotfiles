@@ -1,9 +1,6 @@
 [user]
 	useConfigOnly = true
 
-[core]
-	pager = less -FRX
-
 [color]
 	diff = auto
 	status = auto
