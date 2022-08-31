@@ -1,11 +1,6 @@
 [user]
 	useConfigOnly = true
 
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-
 [alias]
 	co = checkout
 	st = status
