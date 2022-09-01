@@ -1,29 +1,31 @@
-# ===== Appearance =====
+# ===== Antigen =====
 
-# Push terminal look out of stone age
-export TERM=xterm-256color
+source ~/.zsh/antigen.zsh
 
-# ===== Aliases =====
+antigen use oh-my-zsh
 
-# Workaround for https://bugs.launchpad.net/vim/+bug/402188
-alias gvim='gvim 2>/dev/null'
+antigen bundle git
+antigen bundle docker
 
-# ===== Configure oh-my-zsh =====
+antigen theme romkatv/powerlevel10k
 
-ZSH=$HOME/.oh-my-zsh            # Path to oh-my-zsh configuration
+antigen apply
 
-ZSH_THEME="gallifrey"           # Set theme
-plugins=(command-not-found git) # Set loaded plugins
+# ===== Configure Powerlevel10k =====
 
-source $ZSH/oh-my-zsh.sh        # Load oh-my-zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # ===== Use rbenv =====
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
+
+# ===== Use pyenv =====
+
+eval "$(pyenv init - zsh)"
 
 # ===== Use nvm =====
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
