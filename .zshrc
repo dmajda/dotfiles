@@ -15,14 +15,8 @@ antigen apply
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# ===== Use rbenv =====
+# ===== Use version managers =====
 
 eval "$(rbenv init - zsh)"
-
-# ===== Use pyenv =====
-
 eval "$(pyenv init - zsh)"
-
-# ===== Use nodenv =====
-
 eval "$(nodenv init - zsh)"
