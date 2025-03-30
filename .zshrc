@@ -20,3 +20,11 @@ antigen apply
 eval "$(rbenv init - zsh)"
 eval "$(pyenv init - zsh)"
 eval "$(nodenv init - zsh)"
+
+# ===== Source additional files =====
+
+if [ -d ~/.zshrc.d ]; then
+  for file in ~/.zshrc.d/*.zsh(N); do
+    source $file
+  done
+fi
