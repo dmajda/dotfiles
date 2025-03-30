@@ -23,9 +23,6 @@ eval "$(rbenv init - zsh)"
 
 eval "$(pyenv init - zsh)"
 
-# ===== Use nvm =====
+# ===== Use nodenv =====
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
+eval "$(nodenv init - zsh)"
