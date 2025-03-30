@@ -15,10 +15,6 @@ antigen apply
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# ===== Configure GPG =====
-
-export GPG_TTY=$(tty)
-
 # ===== Use rbenv =====
 
 eval "$(rbenv init - zsh)"
