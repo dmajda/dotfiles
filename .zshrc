@@ -18,7 +18,6 @@ antigen apply
 # ===== Use version managers =====
 
 eval "$(rbenv init - zsh)"
-eval "$(pyenv init - zsh)"
 eval "$(nodenv init - zsh)"
 
 # ===== Source additional files =====
