@@ -1,0 +1,46 @@
+// The structure and order of the settings match Zed's Settings Editor.
+
+{
+  // General
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+
+  // Appearance
+  "theme": {
+    "mode": "dark",
+    "light": "Kanso Pearl (No italics)",
+    "dark": "Kanso Zen (No italics)",
+  },
+  "buffer_font_size": 12.0,
+  "buffer_font_features": {
+    "calt": false,
+  },
+
+  // Keymap
+  "vim_mode": true,
+
+  // Editor
+  "use_autoclose": false,
+
+  // Panels
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+  },
+
+  // AI
+  "disable_ai": true,
+}
